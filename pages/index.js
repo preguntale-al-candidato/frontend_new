@@ -1,14 +1,12 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import { Layout } from '../components/layout/layout';
+
+
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <Layout>
       <main>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -126,6 +124,7 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </Layout>
+
   );
 }
